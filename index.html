@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Prologue by HTML5 UP</title>
+		<title>Ertuğrul Tiyek</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -21,15 +21,20 @@
 					<!-- Logo -->
 						<div id="logo">
 							<span class="image avatar48"><img src="images/avatar.jpg" alt="" /></span>
-							<h1 id="title">Jane Doe</h1>
-							<p>Hyperspace Engineer</p>
+							<h1 id="title">Ertuğrul Tiyek</h1>
+							<!-- <p>Hyperspace Engineer</p> -->
 						</div>
 
 					<!-- Nav -->
 						<nav id="nav">
 							<ul>
 								<li><a href="#top" id="top-link"><span class="icon solid fa-home">Intro</span></a></li>
-								<li><a href="#portfolio" id="portfolio-link"><span class="icon solid fa-th">Portfolio</span></a></li>
+								<li class="parent"><a href="#portfolio" id="portfolio-link"><span class="icon solid fa-th">Portfolio</span></a>
+									<ul class="submenu">
+										<li class="submenu-item"><a href="#pro-portfolio" id="portfolio-prof-link"><span class="icon solid fa-robot">Professional</span></a></li>
+										<li class="submenu-item"><a href="#art-portfolio" id="portfolio-art-link"><span class="icon solid fa-paint-brush">Art</span></a></li>
+									</ul>
+								</li>
 								<li><a href="#about" id="about-link"><span class="icon solid fa-user">About Me</span></a></li>
 								<li><a href="#contact" id="contact-link"><span class="icon solid fa-envelope">Contact</span></a></li>
 							</ul>
@@ -86,51 +91,104 @@
 							Tellus erat mauris ipsum fermentum etiam vivamus eget. Nunc nibh morbi quis
 							fusce hendrerit lacus ridiculus.</p>
 
-							<div class="row">
-								<div class="col-4 col-12-mobile">
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
-										<header>
-											<h3>Ipsum Feugiat</h3>
-										</header>
-									</article>
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic03.jpg" alt="" /></a>
-										<header>
-											<h3>Rhoncus Semper</h3>
-										</header>
-									</article>
-								</div>
-								<div class="col-4 col-12-mobile">
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic04.jpg" alt="" /></a>
-										<header>
-											<h3>Magna Nullam</h3>
-										</header>
-									</article>
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a>
-										<header>
-											<h3>Natoque Vitae</h3>
-										</header>
-									</article>
-								</div>
-								<div class="col-4 col-12-mobile">
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic06.jpg" alt="" /></a>
-										<header>
-											<h3>Dolor Penatibus</h3>
-										</header>
-									</article>
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
-										<header>
-											<h3>Orci Convallis</h3>
-										</header>
-									</article>
-								</div>
-							</div>
+							<!-- Professional -->
+							<section id="pro-portfolio" class="two">
+								<div class="container">
+		
+									<header>
+										<h3>Portfolio - Professional</h3>
+									</header>
+				
+									<div class="row">
+										<div class="col-4 col-12-mobile">
+											<article class="item">
+												<a href="https://github.com/ertugrultiyek/huffman_compression" class="image fit">
+													<img src="images/pic02.jpg" alt="" />
+												</a>
+												<header>
+													<h4>Complementary Offline In-Premise LLM Code Assistant with Visual Studio Code Extension</h4>
+												</header>
+											</article>
+											<article class="item">
+												<a href="https://github.com/ertugrultiyek/FPGA_sobel_lane_detector" class="image fit">
+													<img src="images/pic03.jpg" alt="" />
+												</a>
+												<header>
+													<h4>Fast and Low Power Autofocus Application using Sobel Filter Implemented on FPGA</h4>
+												</header>
+											</article>
+											<article class="item">
+												<a href="https://github.com/ertugrultiyek/YOLOv7" class="image fit">
+													<img src="images/pic02.jpg" alt="" />
+												</a>
+												<header>
+													<h4>Training and Optimizing Vehicle Detector for All Ekin Products</h4>
+												</header>
+											</article>
+										</div>
+										<div class="col-4 col-12-mobile">
+											<article class="item">
+												<a href="https://github.com/ertugrultiyek/full_custom_VLSI_180nm" class="image fit">
+													<img src="images/pic02.jpg" alt="" />
+												</a>
+												<header>
+													<h4>VLSI Design and Spice Simulation of Full Custom 64 Bit ALU with 180nm Technology</h4>
+												</header>
+											</article>
+											<article class="item">
+												<a href="https://github.com/ertugrultiyek/UAV-GUI" class="image fit">
+													<img src="images/pic03.jpg" alt="" />
+												</a>
+												<header>
+													<h4>Ground Control Station for UAVs with Mission Planning Tool</h4>
+												</header>
+											</article>
+											<article class="item">
+												<a href="https://github.com/ertugrultiyek/msp430_mqtt_iot" class="image fit">
+													<img src="images/pic02.jpg" alt="" />
+												</a>
+												<header>
+													<h4>Smart Home Assistant Using MSP430 MCU with PCB and MQTT Server</h4>
+												</header>
+											</article>
+										</div>
+										<div class="col-4 col-12-mobile">
+											<article class="item">
+												<a href="https://github.com/ertugrultiyek/YOLOv7" class="image fit">
+													<img src="images/pic03.jpg" alt="" />
+												</a>
+												<header>
+													<h4>Vehicle Detection Using YOLOv7 on Nvidia Deepstream</h4>
+												</header>
+											</article>
+											<article class="item">
+												<a href="https://github.com/ertugrultiyek/UAV-GUI" class="image fit">
+													<img src="images/pic02.jpg" alt="" />
+												</a>
+												<header>
+													<h4>Naval Communication System Design</h4>
+												</header>
+											</article>
+										</div>
+									</div>
+																										</div>
 
+							<!-- Art -->
+							<section id="art-portfolio" class="two">
+								<div class="container">
+		
+									<header>
+										<h3>Portfolio - Art</h3>
+									</header>
+				
+									<div class="row">
+										<div class="col-4 col-12-mobile">
+										</div>
+										<div class="col-4 col-12-mobile">
+										</div>
+										<div class="col-4 col-12-mobile">
+										</div>
+									</div>
 						</div>
 					</section>
 
@@ -185,15 +243,6 @@
 
 			</div>
 
-		<!-- Footer -->
-			<div id="footer">
-
-				<!-- Copyright -->
-					<ul class="copyright">
-						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
-
-			</div>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>

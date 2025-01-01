@@ -2167,6 +2167,10 @@ input, select, textarea {
 					box-shadow: inset 0 0 0.25em 0 rgba(0, 0, 0, 0.125);
 					color: #fff;
 				}
+					#nav ul li a.active .submenu{
+						display: block;
+					}
+
 
 					#nav ul li a.active span:before {
 						color: #e27689;
@@ -2631,3 +2635,18 @@ input, select, textarea {
 				}
 
 	}
+
+/* Hide the submenu by default */
+.submenu {
+    display: none;
+	font-size: 0.8em;
+}
+
+/* Show the submenu on hover */
+.parent:hover .submenu {
+    display: block;
+}
+
+.parent:has(.submenu > li > a.active) .submenu {
+    display: block; /* Ensures the submenu remains visible if any submenu link is active */
+}
