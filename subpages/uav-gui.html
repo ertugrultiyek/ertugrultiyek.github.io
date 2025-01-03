@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Embedding Example</title>
+    <style>
+        body {
+            margin: 0; /* Remove default body margins */
+            background-color: black; /* Set the background to black */
+            display: flex; /* Flexbox for centering */
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            height: 100vh; /* Set body height to 100% of viewport */
+            padding: 2vh; /* Add padding to create space */
+            box-sizing: border-box; /* Include padding in height/width calculation */
+        }
+        iframe {
+            width: calc(90vw - 2vh); /* Adjust width to account for padding */
+            height: calc(90vh - 2vh); /* Adjust height to account for padding */
+            border: none; /* Remove iframe border */
+        }
+        .github-icon {
+            position: absolute; /* Position the icon */
+            top: 1vh; /* Distance from the top of the screen */
+            z-index: 1000; /* Make sure it's above the iframe */
+        }
+        .github-icon img {
+            width: 5vh; /* Size of the icon */
+            height: 5vh; /* Maintain the aspect ratio */
+            cursor: pointer; /* Change cursor on hover */
+        }
+    </style>
+</head>
+<body>
+    <!-- GitHub Icon -->
+    <a href="https://github.com/ertugrultiyek/UAV-GUI" target="_blank" class="github-icon">
+        <img src="src/github-icon.webp" alt="GitHub">
+    </a>
+    <!-- Embedded iframe -->
+    <iframe src="./uav-gui/static/index.html"></iframe>
+</body>
+</html>
