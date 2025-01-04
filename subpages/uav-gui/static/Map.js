@@ -47,7 +47,7 @@ function selectMap(name) {
 	selectedBaseMap = name;
 }
 
-selectMap("StamenTerrain");
+selectMap("OpenStreetMap");
 var TopRightPanel = document.getElementById("TopRightPanel");
 
 
